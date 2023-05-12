@@ -1,0 +1,12 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+
+  Ferdyrurka\SingleTenantVendor\:
+    resource: '../src/*'
+    exclude: '../src/{DependencyInjection,Entity,Migrations,Tests}'
+
+  Ferdyrurka\SingleTenantVendor\Controller\:
+    resource: '../src/Controller/'
+    tags: ['controller.service_arguments']
