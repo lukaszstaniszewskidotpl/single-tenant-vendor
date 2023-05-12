@@ -18,7 +18,6 @@ class SingleTenantVendorExtension extends Extension
             new FileLocator(__DIR__ . '/../../config')
         );
 
-        $loader->load('routing.yaml');
         $loader->load('services.yaml');
     }
 }
